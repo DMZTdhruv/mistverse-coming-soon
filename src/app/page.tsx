@@ -43,7 +43,7 @@ export default function ComingSoon() {
               className="h-12 w-12"
             />
           </motion.div>
-          <h1 className="text-4xl  font-semibold tracking-[-0.03em] text-white">
+          <h1 className="text-5xl  font-semibold tracking-[-0.03em] text-white">
             <AnimatedText text="Mistverse" />
           </h1>
         </motion.div>
@@ -57,7 +57,7 @@ export default function ComingSoon() {
             delay: 2.1,
             ease: [0.43, 0.13, 0.23, 0.96], // Custom easing curve for smoother motion
           }}
-          className="text-xl font-clds font-medium leading-[1.0] text-white"
+          className="text-2xl font-clds font-medium leading-[1.0] text-white"
         >
           BlockChain powered Marketplace for
           <br />
@@ -77,7 +77,7 @@ export default function ComingSoon() {
         >
           <Link
             href="https://discord.gg/bKWNHh8NBZ"
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center gap-2 overflow-hidden rounded-lg bg-black px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
@@ -88,8 +88,12 @@ export default function ComingSoon() {
               className="relative z-10 transition-transform duration-300 group-hover:-rotate-12"
             />
           </Link>
-          <Button className="text-white cursor-default py-1 px-3 flex-shrink-0 tracking-[-0.03em] text-sm font-medium">
-            Coming Soon
+          <Button className="text-white text-md flex items-center justify-center cursor-default py-1 px-3 flex-shrink-0 tracking-[-0.03em] font-medium">
+            <span className="flex items-center justify-center gap-1">
+              Coming Soon on
+              <img src="/solana.svg" className="w-4 h-4" alt="solana icon" />
+              solana
+            </span>
           </Button>
           <Link
             href="https://x.com/Mistverseai"
