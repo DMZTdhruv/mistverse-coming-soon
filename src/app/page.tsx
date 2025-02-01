@@ -73,42 +73,38 @@ export default function ComingSoon() {
             bounce: 0.3,
             ease: [0.43, 0.13, 0.23, 0.96],
           }}
-          className="mt-8 cursor-default text-center"
+          className="mt-8 flex items-center justify-center cursor-default text-center"
         >
-          <Button className="text-white tracking-[-0.03em] text-sm font-medium">
-            Coming Soon
-          </Button>
-        </motion.div>
-        <div className="flex absolute bottom-4 right-4 justify-center space-x-6">
           <Link
             href="https://discord.gg/bKWNHh8NBZ"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center gap-2 overflow-hidden rounded-lg bg-black px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="absolute inset-0  opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             <DiscordLogo
               size={20}
               weight="light"
-              className="relative z-10 transition-transform duration-300 group-hover:rotate-12"
+              className="relative z-10 transition-transform duration-300 group-hover:-rotate-12"
             />
-            <span className="relative z-10">Join our Discord</span>
           </Link>
+          <Button className="text-white cursor-default py-1 px-3 flex-shrink-0 tracking-[-0.03em] text-sm font-medium">
+            Coming Soon
+          </Button>
           <Link
             href="https://x.com/Mistverseai"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative flex items-center gap-2 overflow-hidden rounded-lg bg-black px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div className="absolute inset-0 bg-white/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            <div className="absolute inset-0  opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             <XLogo
               size={20}
               weight="light"
               className="relative z-10 transition-transform duration-300 group-hover:rotate-12"
             />
-            <span className="relative z-10">Follow us on X</span>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </main>
   );

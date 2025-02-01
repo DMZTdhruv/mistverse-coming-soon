@@ -138,7 +138,7 @@ export function CanvasDotAnimation() {
   return (
     <motion.canvas
       ref={canvasRef}
-      className="absolute max-h-[750px] w-full z-20 pointer-events-none mix-blend-screen inset-0 bg-black"
+      className="absolute w-full z-20 pointer-events-none mix-blend-screen inset-0 bg-black"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.5 }}
